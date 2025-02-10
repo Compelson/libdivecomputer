@@ -124,7 +124,9 @@ typedef enum dc_divemode_t {
 	DC_DIVEMODE_GAUGE,
 	DC_DIVEMODE_OC, /* Open circuit */
 	DC_DIVEMODE_CCR, /* Closed circuit rebreather */
-	DC_DIVEMODE_SCR  /* Semi-closed circuit rebreather */
+	DC_DIVEMODE_SCR,  /* Semi-closed circuit rebreather */
+	DC_DIVEMODE_AIR,
+	DC_DIVEMODE_NITROX,
 } dc_divemode_t;
 
 /* For backwards compatibility */

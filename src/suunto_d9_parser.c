@@ -373,7 +373,11 @@ suunto_d9_parser_get_field (dc_parser_t *abstract, dc_field_type_t type, unsigne
 		case DC_FIELD_DIVEMODE:
 			switch (parser->mode) {
 			case AIR:
+				*((dc_divemode_t *) value) = DC_DIVEMODE_AIR;
+				break;
 			case NITROX:
+				*((dc_divemode_t *) value) = DC_DIVEMODE_NITROX;
+				break;
 			case MIXED:
 				*((dc_divemode_t *) value) = DC_DIVEMODE_OC;
 				break;
